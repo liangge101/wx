@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加微信好友</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            padding: 40px 30px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: #07C160;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        .description {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .qrcode-container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 25px;
+        }
+        
+        .qrcode {
+            width: 220px;
+            height: 220px;
+            border: 1px solid #eee;
+        }
+        
+        .instructions {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        .step-number {
+            background: #07C160;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        
+        .tip {
+            color: #888;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        .wechat-brand {
+            color: #07C160;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">
+            <span>👤</span>
+        </div>
+        <h1>添加微信好友</h1>
+        <p class="description">扫描下方二维码，立即添加为微信好友<br>获取更多专属服务与资讯</p>
+        
+        <div class="qrcode-container">
+            <img class="qrcode" src="https://imgchr.com/i/pZSGaCj" alt="微信二维码">
+        </div>
+        
+        <div class="instructions">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>长按上方二维码图片</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>选择"识别图中的二维码"</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>点击"添加到通讯录"</div>
+            </div>
+        </div>
+        
+        <p class="tip">如无法识别，请截图后通过微信扫一扫从相册选择</p>
+    </div>
+    
+    <script>
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            // 可以在这里添加统计代码或其它功能
+            console.log('微信添加好友页面已加载');
+        });
+    </script>
+</body>
+</html>
